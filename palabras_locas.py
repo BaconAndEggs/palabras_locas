@@ -25,14 +25,14 @@ file_to_read = sys.argv[1]
 output_filename = os.path.basename(file_to_read)
 
 # Check if it is a Mac, if so, we will use the say command to
-# so lazy people like me don't need to read the madlib out loud.
+# so lazy people like me don't need to read the new text out loud.
 try:
     platform.mac_ver()
     is_osx = True
 except:
     is_osx = False
 
-madlib_sentences = []
+loco_sentences = []
 
 def find_word_and_replace_it(sentence):
     word_list = sentence.split()
@@ -100,13 +100,13 @@ for idx,orig_sentence in enumerate(original_sentences):
     while replace_attempts < 3:
         try:
             new_sentence = find_word_and_replace_it(stripped_sentence)
-            madlib_sentences.append(new_sentence)
+            loco_sentences.append(new_sentence)
             break
         except WordLookupException:
             replace_attempts += 1
             if replace_attempts == 3:
                 # give up, like Cam Newton reaching for a fumble, and use original sentence
-                madlib_sentences.append(stripped_sentence)
+                loco_sentences.append(stripped_sentence)
 
 print('')
 try:
@@ -117,10 +117,10 @@ except:
 print('')
 print('###### {} ######'.format(output_filename))
 
-for madlib_sentence in madlib_sentences:
-    print(madlib_sentence)
+for loco_sentence in loco_sentences:
+    print(loco_sentence)
     if is_osx:
-        sentence_without_quotes_for_say = madlib_sentence.replace('"', "")
+        sentence_without_quotes_for_say = loco_sentence.replace('"', "")
         sentence_without_quotes_for_say = sentence_without_quotes_for_say.replace("'", "")
         os.system('say "{}"'.format(sentence_without_quotes_for_say))
 
