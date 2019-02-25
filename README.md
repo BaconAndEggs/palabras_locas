@@ -25,8 +25,10 @@ eg: `python palabras_locas.py test_texts/teapot.txt`
 1. If your source text has a lot of run-on sentences, replace some of those commas and semicolons with periods, so word replacements are not few, and far between.
 1. Running on a Mac is recommended, because it will use the `say` tts utility to prompt your audience and when done, its default tinny voice will read the output while you can drink a cervesa.
 
-### Lame issues
+### Lame Issues
 1. The name, sorry.
-1. It should be more descriptive in input specification, for example: probably tell you if it needs a plural noun, thing ending with "ing", a name... The Vocabulary community python module would cover a bit of that.. however, I decided to use PyDictionary library, because it does not run into frequent rate limiting.
+1. It should be more descriptive in input specification, for example: probably tell you if it needs a plural noun, thing ending with "ing", a name should ask for a name, etc... The Vocabulary community python module would cover a bit of that.. however, I decided to use PyDictionary library, because it does not run into frequent rate limiting.
 1. Probably should not be fed shell commands, since the say command is a simple os execution of stuff that was typed.
 1. (Probably many other bugs...)
+
+### Example Execution
