@@ -1,7 +1,7 @@
 # Palabras Locas
 
 ### What is it?
-Palabras Locas is a simple python program which can be fed a file with english plane text, and for every sentence in that file, it will select a random word from each sentence, and ask you for a replacement of the same type (noun, verb, etc). Upon completion, it will ask you to hit enter for the resulting Loco Libro.
+Palabras Locas is a simple python program which can be fed a file with english plane text, and for every sentence in that file, it will select a random word from each sentence, and ask you for a replacement of the same type (noun, verb, etc). Upon completion, it will ask you to hit enter for the resulting Palabras Locas.
 
 ### Why?
 I was visiting Mexico with my family, and decided to take a break one afternoon, because I was cooking my carcus in the sun. I hid in the room and wrote this, for family entertainment.
