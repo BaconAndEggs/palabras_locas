@@ -1,3 +1,9 @@
+import sys
+# Make sure it is running under at least a 3.x python
+if sys.version_info[0] < 3:
+    print('Only compatible with python 3.x versions.')
+    sys.exit(1)
+
 from PyDictionary import PyDictionary
 dictionary = PyDictionary()
 # PyDictionary invokes BeutifulSoup in a way that causes a default parser selection warning.
@@ -9,7 +15,6 @@ warnings.filterwarnings("ignore", category=UserWarning, module='PyDictionary')
 
 import time
 import re
-import sys
 import os
 import platform
 from random import randrange
