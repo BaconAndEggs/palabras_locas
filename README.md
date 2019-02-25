@@ -32,3 +32,24 @@ eg: `python palabras_locas.py test_texts/teapot.txt`
 1. (Probably many other bugs...)
 
 ### Example Execution
+<pre>
+$ python palabras_locas.py example_texts/teapot.txt
+
+Give me a Noun: beer
+Give me a Noun: fart
+Give me a Noun: whiskey
+Give me a Verb: burp
+Give me a Noun: poop
+Give me a Noun: pee
+
+Press any key for your Palabras Locas...
+
+###### teapot.txt ######
+I’m beer little teapot Short and stout
+Here is my fart
+Here is my whiskey
+When I get all steamed burp
+Hear poop shout
+Tip pee over and pour me out
+########################################
+</pre>
